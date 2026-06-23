@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codex研修 | AIコーディング実務研修</title>
+    <meta
+      name="description"
+      content="Codexで何ができるかを実務で学ぶ法人向け研修。2日10万円、4日20万円、エンタープライズはお問い合わせ。"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Codex研修">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M24 4 42 14.5v7.3l-6.6 3.8v-7.2L24 11.8 12.6 18.4v13.2L24 38.2l11.4-6.6v-7.2l6.6 3.8v7.3L24 46 6 35.5v-23L24 4Z"></path>
+            <path d="M24 11.8 12.6 18.4v13.2L24 38.2v7.8L6 35.5v-23L24 4v7.8Z"></path>
+          </svg>
+        </span>
+        <span><strong>CODEX</strong> 研修</span>
+      </a>
+      <label class="header-menu" for="menu-toggle" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </header>
+    <label class="menu-scrim" for="menu-toggle" aria-label="メニューを閉じる"></label>
+    <aside class="side-menu" aria-label="メニュー">
+      <div class="menu-head">
+        <p>MENU</p>
+        <label class="menu-close" for="menu-toggle" aria-label="メニューを閉じる"></label>
+      </div>
+      <nav class="menu-list">
+        <a class="is-active" href="#about">
+          <span class="menu-icon">✓</span>
+          <span><strong>適正診断</strong><small>30秒で受講相性チェック</small></span>
+        </a>
+        <a href="#curriculum">
+          <span class="menu-icon">◇</span>
+          <span><strong>コース一覧</strong><small>2日/4日/エンタープライズ</small></span>
+        </a>
+        <a href="#pricing">
+          <span class="menu-icon">▣</span>
+          <span><strong>料金プラン</strong><small>明朗な3プラン</small></span>
+        </a>
+        <a href="#usecases">
+          <span class="menu-icon">◎</span>
+          <span><strong>導入事例</strong><small>法人の活用シーンを紹介</small></span>
+        </a>
+        <a href="#features">
+          <span class="menu-icon">▤</span>
+          <span><strong>できること</strong><small>Codex活用の実務範囲</small></span>
+        </a>
+        <a href="#difference">
+          <span class="menu-icon">▸</span>
+          <span><strong>他ツールとの違い</strong><small>開発エージェントとしての特徴</small></span>
+        </a>
+        <a href="#contact">
+          <span class="menu-icon">!</span>
+          <span><strong>最新ニュース</strong><small>リリース・更新情報</small></span>
+        </a>
+      </nav>
+      <a class="menu-learning" href="#contact">Eラーニングはこちら</a>
+    </aside>
+
+    <main id="top">
+      <section class="hero" aria-label="Codex研修のファーストビュー">
+        <img class="hero-image" src="assets/hero-codex-fv.png" alt="AIとともに、未来の開発力を。実装できる人材を、最短距離で育てる。">
+        <a class="hero-learn-more" href="#about" aria-label="Codexって何かへ移動"></a>
+        <div class="hero-content visually-hidden">
+          <p class="eyebrow">法人向けAIコーディング研修</p>
+          <h1>Codexで、開発チームの実務を前に進める。</h1>
+          <p class="hero-lead">
+            調査、実装、レビュー、テスト、PR対応まで。Codexを「便利なチャット」ではなく、
+            開発プロセスに組み込むための実践型トレーニングです。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#pricing">料金を見る</a>
+            <a class="button ghost" href="#curriculum">研修内容を見る</a>
+          </div>
+          <dl class="hero-facts" aria-label="研修概要">
+            <div>
+              <dt>2日</dt>
+              <dd>基礎から実務導入</dd>
+            </div>
+            <div>
+              <dt>4日</dt>
+              <dd>チーム運用まで</dd>
+            </div>
+            <div>
+              <dt>Enterprise</dt>
+              <dd>個別設計</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="about" class="section intro-section">
+        <div class="section-head">
+          <p class="eyebrow">What is Codex?</p>
+          <h2>Codexって何か</h2>
+          <p>
+            Codexは、ローカルのコードベースを読み取り、実装・修正・検証を進めるAI開発エージェントです。
+            既存コードの文脈を踏まえながら、コマンド実行、ファイル編集、テスト確認まで一連の作業を支援します。
+          </p>
+        </div>
+        <div class="definition-grid">
+          <article>
+            <span>01</span>
+            <h3>コードベースを読む</h3>
+            <p>ファイル構成、既存パターン、テストの形を把握し、作業に必要な範囲を絞り込みます。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>実装まで進める</h3>
+            <p>仕様の整理だけで終わらず、変更、差分確認、検証コマンドの実行まで担当できます。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>チームで使える</h3>
+            <p>レビュー対応、CI調査、PR作成など、開発チームの日常業務に接続できます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Codexでできること</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>既存コードの調査</h3>
+            <p>仕様の所在、依存関係、影響範囲を短時間で把握し、変更方針を整理します。</p>
+          </article>
+          <article>
+            <h3>機能追加・不具合修正</h3>
+            <p>既存設計に合わせた実装、UI調整、API連携、バグ修正を具体的な差分として作成します。</p>
+          </article>
+          <article>
+            <h3>テスト・検証</h3>
+            <p>ユニットテスト、E2E、lint、型チェックを実行し、失敗ログから修正ポイントを特定します。</p>
+          </article>
+          <article>
+            <h3>レビュー対応</h3>
+            <p>PRコメントやCI失敗を読み、未解決の指摘を実装に反映します。</p>
+          </article>
+          <article>
+            <h3>ドキュメント整備</h3>
+            <p>README、運用手順、設計メモ、移行ガイドなど、コードと一緒に必要な文書を更新します。</p>
+          </article>
+          <article>
+            <h3>開発ワークフロー化</h3>
+            <p>依頼の出し方、確認観点、禁止事項、チーム内ルールを整備して再現性を高めます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="difference" class="section">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Difference</p>
+            <h2>他ツールとの違い</h2>
+            <p>
+              Codexは会話だけで完結する補助ツールではなく、開発環境の中で作業を進めるエージェントです。
+              研修では「任せる範囲」と「人が見るべき判断」を切り分け、現場で事故なく使う方法を扱います。
+            </p>
+          </div>
+          <div class="compare-list">
+            <article>
+              <strong>チャット型AI</strong>
+              <span>質問への回答、方針整理、コード例の作成が中心。</span>
+            </article>
+            <article>
+              <strong>エディタ補完</strong>
+              <span>現在開いているファイルや周辺コードの補完が中心。</span>
+            </article>
+            <article class="highlight">
+              <strong>Codex</strong>
+              <span>リポジトリを横断して読み、編集し、検証まで進める実務エージェント。</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="usecases" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">Use Cases</p>
+          <h2>ユースケース</h2>
+        </div>
+        <div class="usecase-grid">
+          <article>
+            <h3>オンボーディング短縮</h3>
+            <p>新任メンバーが大規模コードを理解する初速を上げ、調査の迷子時間を減らします。</p>
+          </article>
+          <article>
+            <h3>保守開発の高速化</h3>
+            <p>軽微な修正、依存更新、UI調整、テスト追加を小さく確実に進めます。</p>
+          </article>
+          <article>
+            <h3>レビュー負荷の削減</h3>
+            <p>指摘反映、影響確認、再テストを任せ、レビュアーは設計判断に集中できます。</p>
+          </article>
+          <article>
+            <h3>非エンジニアとの協働</h3>
+            <p>仕様整理、画面文言、データ確認など、開発周辺業務を具体的な作業に落とし込みます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="curriculum" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Curriculum</p>
+          <h2>研修内容</h2>
+          <p>講義だけでなく、実際の開発タスクに近い演習を通じて、翌日から使える型を身につけます。</p>
+        </div>
+        <div class="pixel-banner" aria-label="Codex研修の概要ビジュアル">
+          <img src="assets/codex-pixel-training.png" alt="CODEX研修 AIとともに、開発スキルを最短習得。基礎から実践まで、現場で使える力をつくる。">
+        </div>
+        <div class="timeline">
+          <article>
+            <span>Day 1</span>
+            <h3>Codexの基本操作と依頼設計</h3>
+            <p>環境準備、作業範囲の指定、コンテキスト共有、良い依頼文と悪い依頼文を学びます。</p>
+          </article>
+          <article>
+            <span>Day 2</span>
+            <h3>実装・修正・検証の実践</h3>
+            <p>既存コード調査、変更作成、テスト実行、差分レビューまでを一連の流れで演習します。</p>
+          </article>
+          <article>
+            <span>Day 3</span>
+            <h3>チーム開発への組み込み</h3>
+            <p>PR対応、CI調査、レビュー観点、権限と安全ルールをチーム運用に落とし込みます。</p>
+          </article>
+          <article>
+            <span>Day 4</span>
+            <h3>自社業務への適用設計</h3>
+            <p>現場タスクを題材に、導入ロードマップ、運用ルール、評価指標を設計します。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pricing" class="section pricing-section">
+        <div class="section-head">
+          <p class="eyebrow">Pricing</p>
+          <h2>価格</h2>
+          <p>1名あたりの受講価格です。法人単位の開催、カスタム教材、社内環境に合わせた演習も対応します。</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <p class="plan">2日コース</p>
+            <h3>100,000円</h3>
+            <p class="tax">1名 / 税別</p>
+            <ul>
+              <li>Codexの基本操作</li>
+              <li>実装・修正・検証演習</li>
+              <li>個人利用のベストプラクティス</li>
+            </ul>
+            <a class="button secondary" href="#contact">相談する</a>
+          </article>
+          <article class="price-card featured">
+            <p class="plan">4日コース</p>
+            <h3>200,000円</h3>
+            <p class="tax">1名 / 税別</p>
+            <ul>
+              <li>2日コースの全内容</li>
+              <li>PR・CI・レビュー対応</li>
+              <li>自社業務への適用設計</li>
+            </ul>
+            <a class="button primary" href="#contact">問い合わせる</a>
+          </article>
+          <article class="price-card">
+            <p class="plan">Enterprise</p>
+            <h3>お問い合わせ</h3>
+            <p class="tax">個別見積</p>
+            <ul>
+              <li>社内環境に合わせた教材</li>
+              <li>管理者・推進者向け設計</li>
+              <li>複数部署・大人数開催</li>
+            </ul>
+            <a class="button secondary" href="#contact">問い合わせる</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Codex活用を、現場の開発業務に合わせて設計します。</h2>
+        </div>
+        <a class="button primary" href="mailto:info@example.com?subject=Codex研修について">メールで問い合わせる</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-company">
+          <a class="footer-brand" href="#top" aria-label="CODEX研修">
+            <span class="footer-brand-mark" aria-hidden="true"></span>
+            <span><strong>CODEX</strong> 研修</span>
+          </a>
+          <p class="footer-lead">
+            Codex研修で法人リスキリング・人材育成開発を支援。
+            未経験向けCodex塾から社内講師育成まで一気通貫。
+          </p>
+          <address>
+            <a href="mailto:contact@zettai.co.jp">contact@zettai.co.jp</a>
+            <span>東京都港区麻布十番</span>
+          </address>
+        </div>
+
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <section>
+            <h2>目的別プログラム</h2>
+            <a href="#about">Codex 法人導入</a>
+            <a href="#top">法人リスキリング総合LP</a>
+            <a href="#curriculum">Codex塾（未経験向け）</a>
+            <a href="#features">人材育成・人材開発プログラム</a>
+            <a href="#usecases">Codex 人材紹介・派遣・外注</a>
+            <a href="#contact">10日間チュートリアル</a>
+          </section>
+          <section>
+            <h2>サービス</h2>
+            <a href="#curriculum">研修プログラム</a>
+            <a href="#pricing">料金プラン</a>
+            <a href="#usecases">導入事例</a>
+            <a href="#contact">セミナー情報</a>
+            <a href="#contact">お知らせ</a>
+          </section>
+          <section>
+            <h2>サポート</h2>
+            <a href="#features">お役立ち資料</a>
+            <a href="#pricing">よくある質問</a>
+            <a href="#contact">お問い合わせ</a>
+          </section>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <nav aria-label="法務リンク">
+          <a href="#contact">運営会社</a>
+          <a href="#contact">利用規約</a>
+          <a href="#contact">プライバシーポリシー</a>
+          <a href="#contact">特定商取引法に基づく表記</a>
+        </nav>
+        <p>© 2026 株式会社ZETTAi All Rights Reserved.</p>
+      </div>
+
+      <a class="footer-chat" href="#contact" aria-label="お問い合わせ">
+        <span aria-hidden="true"></span>
+      </a>
+    </footer>
+  </body>
+</html>
