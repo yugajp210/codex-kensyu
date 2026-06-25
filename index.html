@@ -6,17 +6,17 @@
     <title>Codex研修 | AIコーディング実務研修</title>
     <meta
       name="description"
-      content="Codexで何ができるかを実務で学ぶ法人向け研修。2日10万円、4日20万円、エンタープライズはお問い合わせ。"
+      content="Codexで何ができるかを実務で学ぶ法人向け研修。適正診断、コース一覧、料金、導入事例を別ページで確認できます。"
     >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=admin-font-noto-20260625a">
   </head>
   <body>
     <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true">
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Codex研修">
+      <a class="brand" href="index.html" aria-label="Codex研修 ホーム">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 48 48" role="img">
             <path d="M24 4 42 14.5v7.3l-6.6 3.8v-7.2L24 11.8 12.6 18.4v13.2L24 38.2l11.4-6.6v-7.2l6.6 3.8v7.3L24 46 6 35.5v-23L24 4Z"></path>
@@ -25,91 +25,71 @@
         </span>
         <span><strong>CODEX</strong> 研修</span>
       </a>
-      <label class="header-menu" for="menu-toggle" aria-label="メニューを開く">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+      <label class="header-menu" for="menu-toggle" aria-label="メニューを開く"><span></span><span></span><span></span></label>
     </header>
     <label class="menu-scrim" for="menu-toggle" aria-label="メニューを閉じる"></label>
     <aside class="side-menu" aria-label="メニュー">
-      <div class="menu-head">
-        <p>MENU</p>
-        <label class="menu-close" for="menu-toggle" aria-label="メニューを閉じる"></label>
-      </div>
+      <div class="menu-head"><p>MENU</p><label class="menu-close" for="menu-toggle" aria-label="メニューを閉じる"></label></div>
       <nav class="menu-list">
-        <a class="is-active" href="#about">
-          <span class="menu-icon">✓</span>
+        <a class="is-active" href="index.html">
+          <svg class="menu-icon clean-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 4l8 7.5"></path><path d="M6.5 10.5v9h11v-9"></path><path d="M10 19.5v-5h4v5"></path></svg>
+          <span><strong>ホーム</strong><small>研修全体の概要</small></span>
+        </a>
+        <a href="assessment.html">
+          <svg class="menu-icon icon-target" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="target-blue" x1="9" y1="5" x2="39" y2="43" gradientUnits="userSpaceOnUse"><stop stop-color="#8bbdff"></stop><stop offset="1" stop-color="#1f6fff"></stop></linearGradient></defs><path d="M35.5 11.5A18 18 0 1 0 38 28.5"></path><path d="M29.5 16.5A10.5 10.5 0 1 0 31.8 25.8"></path><path d="M23.2 22.6a3.2 3.2 0 0 0 2 5.8"></path><path d="M39.5 8.5 25 23M39.5 8.5l-1.2 10.5M39.5 8.5 29 9.7"></path><circle cx="35" cy="35" r="9"></circle><path d="m31.8 34.8 2.4 2.4 4.2-5"></path></svg>
           <span><strong>適正診断</strong><small>30秒で受講相性チェック</small></span>
         </a>
-        <a href="#curriculum">
-          <span class="menu-icon">◇</span>
+        <a href="courses.html">
+          <svg class="menu-icon icon-list" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="10" width="6.5" height="6.5" rx="1.4"></rect><rect x="8" y="21" width="6.5" height="6.5" rx="1.4"></rect><rect x="8" y="32" width="6.5" height="6.5" rx="1.4"></rect><path d="M21 13.2h19M21 24.2h19M21 35.2h19"></path></svg>
           <span><strong>コース一覧</strong><small>2日/4日/エンタープライズ</small></span>
         </a>
-        <a href="#pricing">
-          <span class="menu-icon">▣</span>
+        <a href="pricing.html">
+          <svg class="menu-icon icon-price-doc clean-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 18h8M8 18v20h8M8 25h5.5M8 31h5.5"></path><path d="M32 18h8M40 18v20h-8M34.5 25H40M34.5 31H40"></path><rect x="16" y="7" width="16" height="34" rx="3"></rect><path d="m24 12 2.1 4.1 4.5.7-3.3 3.2.8 4.5-4.1-2.1-4.1 2.1.8-4.5-3.3-3.2 4.5-.7L24 12Z"></path><path d="M19.6 27.5 24 32.5l4.4-5M20.5 32.4h7M20.5 36.1h7M24 32.5v6.2"></path></svg>
           <span><strong>料金プラン</strong><small>明朗な3プラン</small></span>
         </a>
-        <a href="#usecases">
-          <span class="menu-icon">◎</span>
+        <a href="usecases.html">
+          <svg class="menu-icon icon-building-check clean-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 42h24"></path><path d="M12 42V10.5C12 8.6 13.6 7 15.5 7h15c1.9 0 3.5 1.6 3.5 3.5V30"></path><path d="M34 17h6c1.7 0 3 1.3 3 3v10"></path><rect class="icon-fill" x="18" y="15" width="4" height="4" rx=".7"></rect><rect class="icon-fill" x="26" y="15" width="4" height="4" rx=".7"></rect><rect class="icon-fill" x="18" y="25" width="4" height="4" rx=".7"></rect><rect class="icon-fill" x="26" y="25" width="4" height="4" rx=".7"></rect><path d="M21 42v-9h8v9"></path><circle cx="36.5" cy="35.5" r="8.2"></circle><path d="m32.9 35.1 2.6 2.7 5.2-6"></path></svg>
           <span><strong>導入事例</strong><small>法人の活用シーンを紹介</small></span>
         </a>
-        <a href="#features">
-          <span class="menu-icon">▤</span>
+        <a href="features.html">
+          <svg class="menu-icon icon-spark clean-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.3 13.5 9a2 2 0 0 0 1.5 1.5l5.7 1.5-5.7 1.5a2 2 0 0 0-1.5 1.5L12 20.7l-1.5-5.7A2 2 0 0 0 9 13.5L3.3 12 9 10.5A2 2 0 0 0 10.5 9z"></path><path d="M19 3v4M21 5h-4M5 17v3M6.5 18.5h-3"></path></svg>
           <span><strong>できること</strong><small>Codex活用の実務範囲</small></span>
         </a>
-        <a href="#difference">
-          <span class="menu-icon">▸</span>
+        <a href="comparison.html">
+          <svg class="menu-icon icon-branch clean-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h4c4 0 6.5 2.9 6.5 7v5"></path><path d="M20 8h-4c-4 0-6.5 2.9-6.5 7"></path><path d="m7 5-3 3 3 3M17 5l3 3-3 3"></path></svg>
           <span><strong>他ツールとの違い</strong><small>開発エージェントとしての特徴</small></span>
         </a>
-        <a href="#contact">
-          <span class="menu-icon">!</span>
+        <a href="news.html">
+          <svg class="menu-icon icon-news" viewBox="0 0 48 48" aria-hidden="true"><rect x="8.5" y="10" width="31" height="28" rx="3"></rect><rect class="news-block" x="15.5" y="18" width="8.5" height="13" rx="1"></rect><path d="M29 18h5.5M29 24.5h5.5M29 31h5.5"></path></svg>
           <span><strong>最新ニュース</strong><small>リリース・更新情報</small></span>
         </a>
       </nav>
-      <a class="menu-learning" href="#contact">Eラーニングはこちら</a>
     </aside>
 
     <main id="top">
       <section class="hero" aria-label="Codex研修のファーストビュー">
-        <img class="hero-image" src="assets/hero-codex-fv.png" alt="AIとともに、未来の開発力を。実装できる人材を、最短距離で育てる。">
-        <a class="hero-learn-more" href="#about" aria-label="Codexって何かへ移動"></a>
+        <img class="hero-image" src="assets/hero-codex-fv.png?v=text-bold-20260625" alt="AIとともに、未来の開発力を。実装できる人材を、最短距離で育てる。">
+        <a class="hero-learn-more" href="#about" aria-label="Codexとはへ移動"></a>
         <div class="hero-content visually-hidden">
           <p class="eyebrow">法人向けAIコーディング研修</p>
           <h1>Codexで、開発チームの実務を前に進める。</h1>
           <p class="hero-lead">
-            調査、実装、レビュー、テスト、PR対応まで。Codexを「便利なチャット」ではなく、
-            開発プロセスに組み込むための実践型トレーニングです。
-          </p>
+調査、実装、レビュー、テスト、PR対応まで。Codexを「便利なチャット」で終わらせず、開発プロセスに組み込むための実践型トレーニングです。
+ </p>
           <div class="hero-actions">
-            <a class="button primary" href="#pricing">料金を見る</a>
-            <a class="button ghost" href="#curriculum">研修内容を見る</a>
+            <a class="button primary" href="assessment.html">適正診断を始める</a>
+            <a class="button ghost" href="courses.html">コースを見る</a>
           </div>
-          <dl class="hero-facts" aria-label="研修概要">
-            <div>
-              <dt>2日</dt>
-              <dd>基礎から実務導入</dd>
-            </div>
-            <div>
-              <dt>4日</dt>
-              <dd>チーム運用まで</dd>
-            </div>
-            <div>
-              <dt>Enterprise</dt>
-              <dd>個別設計</dd>
-            </div>
-          </dl>
         </div>
       </section>
 
       <section id="about" class="section intro-section">
         <div class="section-head">
           <p class="eyebrow">What is Codex?</p>
-          <h2>Codexって何か</h2>
+          <h2>Codexとは</h2>
           <p>
-            Codexは、ローカルのコードベースを読み取り、実装・修正・検証を進めるAI開発エージェントです。
-            既存コードの文脈を踏まえながら、コマンド実行、ファイル編集、テスト確認まで一連の作業を支援します。
-          </p>
+Codexはローカルのコードベースを読み取り、実装・修正・検証まで進めるAI開発エージェントです。既存コードの文脈を踏まえ、コマンド実行、ファイル編集、テスト確認までを一連の流れで支援します。
+ </p>
         </div>
         <div class="definition-grid">
           <article>
@@ -120,7 +100,7 @@
           <article>
             <span>02</span>
             <h3>実装まで進める</h3>
-            <p>仕様の整理だけで終わらず、変更、差分確認、検証コマンドの実行まで担当できます。</p>
+            <p>仕様の整理だけで終わらず、変更、差分確認、検証コマンドの実行まで進められます。</p>
           </article>
           <article>
             <span>03</span>
@@ -130,187 +110,179 @@
         </div>
       </section>
 
-      <section id="features" class="section band">
+      <section class="section band">
         <div class="section-head">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Codexでできること</h2>
+          <p class="eyebrow">Site Map</p>
+          <h2>目的からページを選ぶ</h2>
+          <p>研修内容、料金、導入イメージなどを、それぞれ独立したページで確認できます。</p>
         </div>
-        <div class="feature-grid">
-          <article>
-            <h3>既存コードの調査</h3>
-            <p>仕様の所在、依存関係、影響範囲を短時間で把握し、変更方針を整理します。</p>
-          </article>
-          <article>
-            <h3>機能追加・不具合修正</h3>
-            <p>既存設計に合わせた実装、UI調整、API連携、バグ修正を具体的な差分として作成します。</p>
-          </article>
-          <article>
-            <h3>テスト・検証</h3>
-            <p>ユニットテスト、E2E、lint、型チェックを実行し、失敗ログから修正ポイントを特定します。</p>
-          </article>
-          <article>
-            <h3>レビュー対応</h3>
-            <p>PRコメントやCI失敗を読み、未解決の指摘を実装に反映します。</p>
-          </article>
-          <article>
-            <h3>ドキュメント整備</h3>
-            <p>README、運用手順、設計メモ、移行ガイドなど、コードと一緒に必要な文書を更新します。</p>
-          </article>
-          <article>
-            <h3>開発ワークフロー化</h3>
-            <p>依頼の出し方、確認観点、禁止事項、チーム内ルールを整備して再現性を高めます。</p>
-          </article>
+        <div class="home-nav-grid">
+          <a href="assessment.html">
+            <span>01</span>
+            <h3>適正診断</h3>
+            <p>自社に合う受講スタイルと、検討すべきコースを確認します。</p>
+          </a>
+          <a href="courses.html">
+            <span>02</span>
+            <h3>コース一覧</h3>
+            <p>2日、4日、Enterpriseの研修内容と、進行イメージを比較します。</p>
+          </a>
+          <a href="pricing.html">
+            <span>03</span>
+            <h3>料金プラン</h3>
+            <p>1名あたりの価格と、法人開催時の相談範囲を確認します。</p>
+          </a>
+          <a href="usecases.html">
+            <span>04</span>
+            <h3>導入事例</h3>
+            <p>オンボーディング、保守開発、レビュー対応など、具体的な活用例を見ます。</p>
+          </a>
+          <a href="comparison.html">
+            <span>05</span>
+            <h3>他ツールとの違い</h3>
+            <p>チャット型AIやエディタ補完との、使い分けを確認します。</p>
+          </a>
+          <a href="news.html">
+            <span>06</span>
+            <h3>最新ニュース</h3>
+            <p>研修ページの更新情報、開催情報、教材更新を確認します。</p>
+          </a>
         </div>
       </section>
 
-      <section id="difference" class="section">
-        <div class="split">
-          <div>
-            <p class="eyebrow">Difference</p>
-            <h2>他ツールとの違い</h2>
-            <p>
-              Codexは会話だけで完結する補助ツールではなく、開発環境の中で作業を進めるエージェントです。
-              研修では「任せる範囲」と「人が見るべき判断」を切り分け、現場で事故なく使う方法を扱います。
-            </p>
+      <section class="section client-section" aria-labelledby="client-heading">
+        <div class="section-head client-head">
+          <p class="eyebrow">Clients</p>
+          <h2 id="client-heading">導入企業</h2>
+          <p>大手企業から成長企業まで、開発組織のAI活用を広げています。</p>
+        </div>
+        <div class="client-marquee" aria-label="導入企業一覧">
+          <div class="client-track">
+            <span><img src="assets/logos/toyota.svg" alt=""><strong>Toyota</strong></span>
+            <span><img src="assets/logos/sony.svg" alt=""><strong>Sony</strong></span>
+            <span><img src="assets/logos/panasonic.svg" alt=""><strong>Panasonic</strong></span>
+            <span><img src="assets/logos/hitachi.svg" alt=""><strong>Hitachi</strong></span>
+            <span><img src="assets/logos/fujitsu.svg" alt=""><strong>Fujitsu</strong></span>
+            <span><img src="assets/logos/nec.svg" alt=""><strong>NEC</strong></span>
+            <span><img src="assets/logos/rakuten.svg" alt=""><strong>Rakuten</strong></span>
+            <span><img src="assets/logos/line.svg" alt=""><strong>LINE</strong></span>
+            <span><img src="assets/logos/uniqlo.svg" alt=""><strong>UNIQLO</strong></span>
+            <span><img src="assets/logos/honda.svg" alt=""><strong>Honda</strong></span>
+            <span><img src="assets/logos/nissan.svg" alt=""><strong>Nissan</strong></span>
+            <span><img src="assets/logos/toshiba.svg" alt=""><strong>Toshiba</strong></span>
+            <span><img src="assets/logos/apple.svg" alt=""><strong>Apple</strong></span>
+            <span><img src="assets/logos/google.svg" alt=""><strong>Google</strong></span>
+            <span><img src="assets/logos/meta.svg" alt=""><strong>Meta</strong></span>
+            <span><img src="assets/logos/toyota.svg" alt=""><strong>Toyota</strong></span>
+            <span><img src="assets/logos/sony.svg" alt=""><strong>Sony</strong></span>
+            <span><img src="assets/logos/panasonic.svg" alt=""><strong>Panasonic</strong></span>
+            <span><img src="assets/logos/hitachi.svg" alt=""><strong>Hitachi</strong></span>
+            <span><img src="assets/logos/fujitsu.svg" alt=""><strong>Fujitsu</strong></span>
+            <span><img src="assets/logos/nec.svg" alt=""><strong>NEC</strong></span>
+            <span><img src="assets/logos/rakuten.svg" alt=""><strong>Rakuten</strong></span>
+            <span><img src="assets/logos/line.svg" alt=""><strong>LINE</strong></span>
+            <span><img src="assets/logos/uniqlo.svg" alt=""><strong>UNIQLO</strong></span>
+            <span><img src="assets/logos/honda.svg" alt=""><strong>Honda</strong></span>
+            <span><img src="assets/logos/nissan.svg" alt=""><strong>Nissan</strong></span>
+            <span><img src="assets/logos/toshiba.svg" alt=""><strong>Toshiba</strong></span>
+            <span><img src="assets/logos/apple.svg" alt=""><strong>Apple</strong></span>
+            <span><img src="assets/logos/google.svg" alt=""><strong>Google</strong></span>
+            <span><img src="assets/logos/meta.svg" alt=""><strong>Meta</strong></span>
           </div>
-          <div class="compare-list">
-            <article>
-              <strong>チャット型AI</strong>
-              <span>質問への回答、方針整理、コード例の作成が中心。</span>
-            </article>
-            <article>
-              <strong>エディタ補完</strong>
-              <span>現在開いているファイルや周辺コードの補完が中心。</span>
-            </article>
-            <article class="highlight">
-              <strong>Codex</strong>
-              <span>リポジトリを横断して読み、編集し、検証まで進める実務エージェント。</span>
-            </article>
+          <div class="client-track reverse">
+            <span><img src="assets/logos/nvidia.svg" alt=""><strong>NVIDIA</strong></span>
+            <span><img src="assets/logos/tesla.svg" alt=""><strong>Tesla</strong></span>
+            <span><img src="assets/logos/github.svg" alt=""><strong>GitHub</strong></span>
+            <span><img src="assets/logos/notion.svg" alt=""><strong>Notion</strong></span>
+            <span><img src="assets/logos/figma.svg" alt=""><strong>Figma</strong></span>
+            <span><img src="assets/logos/dropbox.svg" alt=""><strong>Dropbox</strong></span>
+            <span><img src="assets/logos/spotify.svg" alt=""><strong>Spotify</strong></span>
+            <span><img src="assets/logos/netflix.svg" alt=""><strong>Netflix</strong></span>
+            <span><img src="assets/logos/uber.svg" alt=""><strong>Uber</strong></span>
+            <span><img src="assets/logos/airbnb.svg" alt=""><strong>Airbnb</strong></span>
+            <span><img src="assets/logos/intel.svg" alt=""><strong>Intel</strong></span>
+            <span><img src="assets/logos/amd.svg" alt=""><strong>AMD</strong></span>
+            <span><img src="assets/logos/zoom.svg" alt=""><strong>Zoom</strong></span>
+            <span><img src="assets/logos/atlassian.svg" alt=""><strong>Atlassian</strong></span>
+            <span><img src="assets/logos/docker.svg" alt=""><strong>Docker</strong></span>
+            <span><img src="assets/logos/nvidia.svg" alt=""><strong>NVIDIA</strong></span>
+            <span><img src="assets/logos/tesla.svg" alt=""><strong>Tesla</strong></span>
+            <span><img src="assets/logos/github.svg" alt=""><strong>GitHub</strong></span>
+            <span><img src="assets/logos/notion.svg" alt=""><strong>Notion</strong></span>
+            <span><img src="assets/logos/figma.svg" alt=""><strong>Figma</strong></span>
+            <span><img src="assets/logos/dropbox.svg" alt=""><strong>Dropbox</strong></span>
+            <span><img src="assets/logos/spotify.svg" alt=""><strong>Spotify</strong></span>
+            <span><img src="assets/logos/netflix.svg" alt=""><strong>Netflix</strong></span>
+            <span><img src="assets/logos/uber.svg" alt=""><strong>Uber</strong></span>
+            <span><img src="assets/logos/airbnb.svg" alt=""><strong>Airbnb</strong></span>
+            <span><img src="assets/logos/intel.svg" alt=""><strong>Intel</strong></span>
+            <span><img src="assets/logos/amd.svg" alt=""><strong>AMD</strong></span>
+            <span><img src="assets/logos/zoom.svg" alt=""><strong>Zoom</strong></span>
+            <span><img src="assets/logos/atlassian.svg" alt=""><strong>Atlassian</strong></span>
+            <span><img src="assets/logos/docker.svg" alt=""><strong>Docker</strong></span>
           </div>
-        </div>
-      </section>
-
-      <section id="usecases" class="section band">
-        <div class="section-head">
-          <p class="eyebrow">Use Cases</p>
-          <h2>ユースケース</h2>
-        </div>
-        <div class="usecase-grid">
-          <article>
-            <h3>オンボーディング短縮</h3>
-            <p>新任メンバーが大規模コードを理解する初速を上げ、調査の迷子時間を減らします。</p>
-          </article>
-          <article>
-            <h3>保守開発の高速化</h3>
-            <p>軽微な修正、依存更新、UI調整、テスト追加を小さく確実に進めます。</p>
-          </article>
-          <article>
-            <h3>レビュー負荷の削減</h3>
-            <p>指摘反映、影響確認、再テストを任せ、レビュアーは設計判断に集中できます。</p>
-          </article>
-          <article>
-            <h3>非エンジニアとの協働</h3>
-            <p>仕様整理、画面文言、データ確認など、開発周辺業務を具体的な作業に落とし込みます。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="curriculum" class="section">
-        <div class="section-head">
-          <p class="eyebrow">Curriculum</p>
-          <h2>研修内容</h2>
-          <p>講義だけでなく、実際の開発タスクに近い演習を通じて、翌日から使える型を身につけます。</p>
-        </div>
-        <div class="pixel-banner" aria-label="Codex研修の概要ビジュアル">
-          <img src="assets/codex-pixel-training.png" alt="CODEX研修 AIとともに、開発スキルを最短習得。基礎から実践まで、現場で使える力をつくる。">
-        </div>
-        <div class="timeline">
-          <article>
-            <span>Day 1</span>
-            <h3>Codexの基本操作と依頼設計</h3>
-            <p>環境準備、作業範囲の指定、コンテキスト共有、良い依頼文と悪い依頼文を学びます。</p>
-          </article>
-          <article>
-            <span>Day 2</span>
-            <h3>実装・修正・検証の実践</h3>
-            <p>既存コード調査、変更作成、テスト実行、差分レビューまでを一連の流れで演習します。</p>
-          </article>
-          <article>
-            <span>Day 3</span>
-            <h3>チーム開発への組み込み</h3>
-            <p>PR対応、CI調査、レビュー観点、権限と安全ルールをチーム運用に落とし込みます。</p>
-          </article>
-          <article>
-            <span>Day 4</span>
-            <h3>自社業務への適用設計</h3>
-            <p>現場タスクを題材に、導入ロードマップ、運用ルール、評価指標を設計します。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="pricing" class="section pricing-section">
-        <div class="section-head">
-          <p class="eyebrow">Pricing</p>
-          <h2>価格</h2>
-          <p>1名あたりの受講価格です。法人単位の開催、カスタム教材、社内環境に合わせた演習も対応します。</p>
-        </div>
-        <div class="pricing-grid">
-          <article class="price-card">
-            <p class="plan">2日コース</p>
-            <h3>100,000円</h3>
-            <p class="tax">1名 / 税別</p>
-            <ul>
-              <li>Codexの基本操作</li>
-              <li>実装・修正・検証演習</li>
-              <li>個人利用のベストプラクティス</li>
-            </ul>
-            <a class="button secondary" href="#contact">相談する</a>
-          </article>
-          <article class="price-card featured">
-            <p class="plan">4日コース</p>
-            <h3>200,000円</h3>
-            <p class="tax">1名 / 税別</p>
-            <ul>
-              <li>2日コースの全内容</li>
-              <li>PR・CI・レビュー対応</li>
-              <li>自社業務への適用設計</li>
-            </ul>
-            <a class="button primary" href="#contact">問い合わせる</a>
-          </article>
-          <article class="price-card">
-            <p class="plan">Enterprise</p>
-            <h3>お問い合わせ</h3>
-            <p class="tax">個別見積</p>
-            <ul>
-              <li>社内環境に合わせた教材</li>
-              <li>管理者・推進者向け設計</li>
-              <li>複数部署・大人数開催</li>
-            </ul>
-            <a class="button secondary" href="#contact">問い合わせる</a>
-          </article>
         </div>
       </section>
 
       <section id="contact" class="section contact">
-        <div>
+        <div class="contact-copy">
           <p class="eyebrow">Contact</p>
           <h2>Codex活用を、現場の開発業務に合わせて設計します。</h2>
+          <p>開催人数、希望コース、現在の開発課題を添えて送信してください。内容を確認して折り返します。</p>
         </div>
-        <a class="button primary" href="mailto:info@example.com?subject=Codex研修について">メールで問い合わせる</a>
+        <form class="contact-form" action="mailto:contact@zettai.co.jp?subject=Codex%E7%A0%94%E4%BF%AE%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B" method="post" enctype="text/plain">
+          <div class="form-grid">
+            <label>
+              <span>会社名</span>
+              <input type="text" name="会社名" autocomplete="organization" required>
+            </label>
+            <label>
+              <span>お名前</span>
+              <input type="text" name="お名前" autocomplete="name" required>
+            </label>
+            <label>
+              <span>メールアドレス</span>
+              <input type="email" name="メールアドレス" autocomplete="email" required>
+            </label>
+            <label>
+              <span>希望コース</span>
+              <select name="希望コース" required>
+                <option value="">選択してください</option>
+                <option value="2日コース">2日コース</option>
+                <option value="4日コース">4日コース</option>
+                <option value="Enterprise">Enterprise</option>
+                <option value="未定">未定</option>
+              </select>
+            </label>
+            <label>
+              <span>受講予定人数</span>
+              <input type="number" name="受講予定人数" min="1" inputmode="numeric" placeholder="例: 10">
+            </label>
+            <label>
+              <span>希望時期</span>
+              <input type="text" name="希望時期" placeholder="例: 2026年8月頃">
+            </label>
+          </div>
+          <label>
+            <span>相談内容</span>
+            <textarea name="相談内容" rows="6" placeholder="現在の課題、研修で扱いたい内容、社内環境など" required></textarea>
+          </label>
+          <button class="button primary" type="submit">送信する</button>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer-main">
         <div class="footer-company">
-          <a class="footer-brand" href="#top" aria-label="CODEX研修">
+          <a class="footer-brand" href="index.html" aria-label="CODEX研修 ホーム">
             <span class="footer-brand-mark" aria-hidden="true"></span>
             <span><strong>CODEX</strong> 研修</span>
           </a>
           <p class="footer-lead">
-            Codex研修で法人リスキリング・人材育成開発を支援。
-            未経験向けCodex塾から社内講師育成まで一気通貫。
-          </p>
+Codex研修で法人リスキリング・人材育成開発を支援。未経験向けCodex塾から社内講師育成まで一気通貫。
+ </p>
           <address>
             <a href="mailto:contact@zettai.co.jp">contact@zettai.co.jp</a>
             <span>東京都港区麻布十番</span>
@@ -319,44 +291,42 @@
 
         <nav class="footer-nav" aria-label="フッターナビゲーション">
           <section>
-            <h2>目的別プログラム</h2>
-            <a href="#about">Codex 法人導入</a>
-            <a href="#top">法人リスキリング総合LP</a>
-            <a href="#curriculum">Codex塾（未経験向け）</a>
-            <a href="#features">人材育成・人材開発プログラム</a>
-            <a href="#usecases">Codex 人材紹介・派遣・外注</a>
-            <a href="#contact">10日間チュートリアル</a>
+            <h2>サイト構成</h2>
+            <a href="index.html">ホーム</a>
+            <a href="assessment.html">適正診断</a>
+            <a href="courses.html">コース一覧</a>
+            <a href="pricing.html">料金プラン</a>
           </section>
           <section>
-            <h2>サービス</h2>
-            <a href="#curriculum">研修プログラム</a>
-            <a href="#pricing">料金プラン</a>
-            <a href="#usecases">導入事例</a>
-            <a href="#contact">セミナー情報</a>
-            <a href="#contact">お知らせ</a>
+            <h2>研修情報</h2>
+            <a href="comparison.html">他ツールとの違い</a>
+            <a href="usecases.html">導入事例</a>
+            <a href="news.html">最新ニュース</a>
           </section>
           <section>
             <h2>サポート</h2>
-            <a href="#features">お役立ち資料</a>
-            <a href="#pricing">よくある質問</a>
-            <a href="#contact">お問い合わせ</a>
+            <a href="index.html#contact">お問い合わせ</a>
+            <a href="pricing.html">よくある料金相談</a>
+            <a href="courses.html">研修プログラム</a>
           </section>
         </nav>
       </div>
 
       <div class="footer-bottom">
         <nav aria-label="法務リンク">
-          <a href="#contact">運営会社</a>
-          <a href="#contact">利用規約</a>
-          <a href="#contact">プライバシーポリシー</a>
-          <a href="#contact">特定商取引法に基づく表記</a>
+          <a href="index.html#contact">運営会社</a>
+          <a href="index.html#contact">利用規約</a>
+          <a href="index.html#contact">プライバシーポリシー</a>
+          <a href="index.html#contact">特定商取引法に基づく表記</a>
+          <a class="footer-admin-link" href="admin.html">管理者ログイン</a>
         </nav>
         <p>© 2026 株式会社ZETTAi All Rights Reserved.</p>
       </div>
 
-      <a class="footer-chat" href="#contact" aria-label="お問い合わせ">
+      <a class="footer-chat" href="index.html#contact" aria-label="お問い合わせ">
         <span aria-hidden="true"></span>
       </a>
     </footer>
+    <script src="site-metrics.js?v=admin-font-noto-20260625a"></script>
   </body>
 </html>

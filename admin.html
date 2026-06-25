@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>管理者ログイン | Codex研修</title>
+    <meta name="description" content="Codex研修サイトの閲覧数と問い合わせを確認する管理画面です。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=admin-font-noto-20260625a">
+  </head>
+  <body class="admin-page">
+    <main class="admin-shell">
+      <a class="admin-back" href="index.html">サイトへ戻る</a>
+
+      <section class="admin-login-panel" data-admin-login>
+        <p class="eyebrow">Admin</p>
+        <h1>管理者ログイン</h1>
+        <form class="admin-login-form" data-admin-login-form>
+          <label>
+            <span>パスワード</span>
+            <input id="admin-password" type="password" autocomplete="current-password" required>
+          </label>
+          <button class="button primary" type="submit">ログイン</button>
+          <p class="admin-error" data-admin-error></p>
+        </form>
+        <p class="admin-note">簡易ログインです。本番運用ではサーバー側の認証に切り替えてください。</p>
+      </section>
+
+      <section class="admin-dashboard" data-admin-dashboard hidden>
+        <div class="admin-dashboard-head">
+          <div>
+            <p class="eyebrow">Dashboard</p>
+            <h1>管理画面</h1>
+          </div>
+          <div class="admin-actions">
+            <button class="button ghost" type="button" data-admin-refresh>更新</button>
+            <button class="button secondary" type="button" data-admin-logout>ログアウト</button>
+          </div>
+        </div>
+
+        <div class="admin-stats">
+          <article>
+            <span>総閲覧数</span>
+            <strong data-total-views>0</strong>
+          </article>
+          <article>
+            <span>今日の閲覧数</span>
+            <strong data-today-views>0</strong>
+          </article>
+          <article>
+            <span>問い合わせ</span>
+            <strong data-inquiry-count>0</strong>
+          </article>
+        </div>
+
+        <section class="admin-panel">
+          <div class="admin-panel-head">
+            <h2>ページ別閲覧数</h2>
+            <button class="admin-text-button" type="button" data-admin-clear-views>閲覧数をリセット</button>
+          </div>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>ページ</th>
+                  <th>ファイル</th>
+                  <th>閲覧数</th>
+                  <th>最終閲覧</th>
+                </tr>
+              </thead>
+              <tbody data-page-views></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="admin-panel">
+          <div class="admin-panel-head">
+            <h2>問い合わせ一覧</h2>
+            <div>
+              <button class="admin-text-button" type="button" data-admin-export>CSV出力</button>
+              <button class="admin-text-button danger" type="button" data-admin-clear-inquiries>削除</button>
+            </div>
+          </div>
+          <div class="admin-inquiry-list" data-inquiries></div>
+        </section>
+      </section>
+    </main>
+    <script src="admin.js?v=admin-font-noto-20260625a"></script>
+  </body>
+</html>

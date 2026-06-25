@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>適正診断 | Codex研修</title>
+    <meta name="description" content="Codex研修が自社に合うか、30秒で確認できる適正診断ページです。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=admin-font-noto-20260625a">
+  </head>
+  <body>
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Codex研修 ホーム">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M24 4 42 14.5v7.3l-6.6 3.8v-7.2L24 11.8 12.6 18.4v13.2L24 38.2l11.4-6.6v-7.2l6.6 3.8v7.3L24 46 6 35.5v-23L24 4Z"></path>
+            <path d="M24 11.8 12.6 18.4v13.2L24 38.2v7.8L6 35.5v-23L24 4v7.8Z"></path>
+          </svg>
+        </span>
+        <span><strong>CODEX</strong> 研修</span>
+      </a>
+      <label class="header-menu" for="menu-toggle" aria-label="メニューを開く"><span></span><span></span><span></span></label>
+    </header>
+    <label class="menu-scrim" for="menu-toggle" aria-label="メニューを閉じる"></label>
+    <aside class="side-menu" aria-label="メニュー">
+      <div class="menu-head"><p>MENU</p><label class="menu-close" for="menu-toggle" aria-label="メニューを閉じる"></label></div>
+      <nav class="menu-list">
+        <a href="index.html">
+          <svg class="menu-icon clean-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 4l8 7.5"></path><path d="M6.5 10.5v9h11v-9"></path><path d="M10 19.5v-5h4v5"></path></svg>
+          <span><strong>ホーム</strong><small>研修全体の概要</small></span>
+        </a>
+        <a class="is-active" href="assessment.html">
+          <svg class="menu-icon icon-target" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="target-blue" x1="9" y1="5" x2="39" y2="43" gradientUnits="userSpaceOnUse"><stop stop-color="#8bbdff"></stop><stop offset="1" stop-color="#1f6fff"></stop></linearGradient></defs><path d="M35.5 11.5A18 18 0 1 0 38 28.5"></path><path d="M29.5 16.5A10.5 10.5 0 1 0 31.8 25.8"></path><path d="M23.2 22.6a3.2 3.2 0 0 0 2 5.8"></path><path d="M39.5 8.5 25 23M39.5 8.5l-1.2 10.5M39.5 8.5 29 9.7"></path><circle cx="35" cy="35" r="9"></circle><path d="m31.8 34.8 2.4 2.4 4.2-5"></path></svg>
+          <span><strong>適正診断</strong><small>30秒で受講相性チェック</small></span>
+        </a>
+        <a href="courses.html">
+          <svg class="menu-icon icon-list" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="10" width="6.5" height="6.5" rx="1.4"></rect><rect x="8" y="21" width="6.5" height="6.5" rx="1.4"></rect><rect x="8" y="32" width="6.5" height="6.5" rx="1.4"></rect><path d="M21 13.2h19M21 24.2h19M21 35.2h19"></path></svg>
+          <span><strong>コース一覧</strong><small>2日/4日/エンタープライズ</small></span>
+        </a>
+        <a href="pricing.html">
+          <svg class="menu-icon icon-price-doc clean-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 18h8M8 18v20h8M8 25h5.5M8 31h5.5"></path><path d="M32 18h8M40 18v20h-8M34.5 25H40M34.5 31H40"></path><rect x="16" y="7" width="16" height="34" rx="3"></rect><path d="m24 12 2.1 4.1 4.5.7-3.3 3.2.8 4.5-4.1-2.1-4.1 2.1.8-4.5-3.3-3.2 4.5-.7L24 12Z"></path><path d="M19.6 27.5 24 32.5l4.4-5M20.5 32.4h7M20.5 36.1h7M24 32.5v6.2"></path></svg>
+          <span><strong>料金プラン</strong><small>明朗な3プラン</small></span>
+        </a>
+        <a href="usecases.html">
+          <svg class="menu-icon icon-building-check clean-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 42h24"></path><path d="M12 42V10.5C12 8.6 13.6 7 15.5 7h15c1.9 0 3.5 1.6 3.5 3.5V30"></path><path d="M34 17h6c1.7 0 3 1.3 3 3v10"></path><rect class="icon-fill" x="18" y="15" width="4" height="4" rx=".7"></rect><rect class="icon-fill" x="26" y="15" width="4" height="4" rx=".7"></rect><rect class="icon-fill" x="18" y="25" width="4" height="4" rx=".7"></rect><rect class="icon-fill" x="26" y="25" width="4" height="4" rx=".7"></rect><path d="M21 42v-9h8v9"></path><circle cx="36.5" cy="35.5" r="8.2"></circle><path d="m32.9 35.1 2.6 2.7 5.2-6"></path></svg>
+          <span><strong>導入事例</strong><small>法人の活用シーンを紹介</small></span>
+        </a>
+        <a href="features.html">
+          <svg class="menu-icon icon-spark clean-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.3 13.5 9a2 2 0 0 0 1.5 1.5l5.7 1.5-5.7 1.5a2 2 0 0 0-1.5 1.5L12 20.7l-1.5-5.7A2 2 0 0 0 9 13.5L3.3 12 9 10.5A2 2 0 0 0 10.5 9z"></path><path d="M19 3v4M21 5h-4M5 17v3M6.5 18.5h-3"></path></svg>
+          <span><strong>できること</strong><small>Codex活用の実務範囲</small></span>
+        </a>
+        <a href="comparison.html">
+          <svg class="menu-icon icon-branch clean-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h4c4 0 6.5 2.9 6.5 7v5"></path><path d="M20 8h-4c-4 0-6.5 2.9-6.5 7"></path><path d="m7 5-3 3 3 3M17 5l3 3-3 3"></path></svg>
+          <span><strong>他ツールとの違い</strong><small>開発エージェントとしての特徴</small></span>
+        </a>
+        <a href="news.html">
+          <svg class="menu-icon icon-news" viewBox="0 0 48 48" aria-hidden="true"><rect x="8.5" y="10" width="31" height="28" rx="3"></rect><rect class="news-block" x="15.5" y="18" width="8.5" height="13" rx="1"></rect><path d="M29 18h5.5M29 24.5h5.5M29 31h5.5"></path></svg>
+          <span><strong>最新ニュース</strong><small>リリース・更新情報</small></span>
+        </a>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Assessment</p>
+        <h1>Codex研修の<br>適正診断</h1>
+        <p>現在の開発業務やチーム課題から、Codex研修が合うか、どのコースから始めるべきかを確認できます。</p>
+        <div class="page-actions">
+          <a class="button primary" href="courses.html">診断結果からコースを見る</a>
+          <a class="button ghost" href="pricing.html">料金を確認する</a>
+        </div>
+      </section>
+
+      <section class="section assessment-section" aria-labelledby="assessment-title">
+        <div class="section-head">
+          <p class="eyebrow">Check Points</p>
+          <h2 id="assessment-title">7項目のはい・いいえ診断</h2>
+          <p>研修開始に必要な環境、体制、業務課題が、どれだけ整っているかを確認します。</p>
+        </div>
+
+        <div class="assessment-shell" data-assessment>
+          <form class="assessment-form" id="assessment-form">
+            <article class="assessment-question" aria-labelledby="q1-title">
+              <h3 id="q1-title"><span>Q1</span>受講者にMacを用意できますか？</h3>
+              <p>Windowsでも受講可能ですが、環境起因のエラーが起きやすく非推奨です。Macであればセットアップ不要で、スムーズに開始できます。</p>
+              <div class="assessment-choices">
+                <label><input type="radio" name="q1" value="yes">はい</label>
+                <label><input type="radio" name="q1" value="no">いいえ</label>
+              </div>
+            </article>
+
+            <article class="assessment-question" aria-labelledby="q2-title">
+              <h3 id="q2-title"><span>Q2</span>PCのメモリは16GB以上ありますか？（32GB推奨）</h3>
+              <p>Claude Codeとブラウザ・エディタを同時に動かすため、16GB以上が必要です。32GBあるとビルド時も安定します。</p>
+              <div class="assessment-choices">
+                <label><input type="radio" name="q2" value="yes">はい</label>
+                <label><input type="radio" name="q2" value="no">いいえ</label>
+              </div>
+            </article>
+
+            <article class="assessment-question" aria-labelledby="q3-title">
+              <h3 id="q3-title"><span>Q3</span>対象部署は1つに絞れていますか？</h3>
+              <p>まず1チームで成功事例をつくり、横展開するのが最も確実です。全社一斉ではなく、1部署集中を推奨しています。</p>
+              <div class="assessment-choices">
+                <label><input type="radio" name="q3" value="yes">はい</label>
+                <label><input type="radio" name="q3" value="no">いいえ</label>
+              </div>
+            </article>
+
+            <article class="assessment-question" aria-labelledby="q4-title">
+              <h3 id="q4-title"><span>Q4</span>受講候補者は決まっていますか？（2名以上）</h3>
+              <p>人選が決まっていれば、業務課題に合わせたカリキュラム設計がすぐに始められます。</p>
+              <div class="assessment-choices">
+                <label><input type="radio" name="q4" value="yes">はい</label>
+                <label><input type="radio" name="q4" value="no">いいえ</label>
+              </div>
+            </article>
+
+            <article class="assessment-question" aria-labelledby="q5-title">
+              <h3 id="q5-title"><span>Q5</span>内製化したい業務が1つ以上ありますか？</h3>
+              <p>Excel台帳のWeb化、日報集計、承認フローなど、具体的な課題があるほど研修効果が高まります。</p>
+              <div class="assessment-choices">
+                <label><input type="radio" name="q5" value="yes">はい</label>
+                <label><input type="radio" name="q5" value="no">いいえ</label>
+              </div>
+            </article>
+
+            <article class="assessment-question" aria-labelledby="q6-title">
+              <h3 id="q6-title"><span>Q6</span>現場に推進責任者はいますか？</h3>
+              <p>研修後の定着・改善を継続するために、現場側にオーナーシップを持つ人が必要です。</p>
+              <div class="assessment-choices">
+                <label><input type="radio" name="q6" value="yes">はい</label>
+                <label><input type="radio" name="q6" value="no">いいえ</label>
+              </div>
+            </article>
+
+            <article class="assessment-question" aria-labelledby="q7-title">
+              <h3 id="q7-title"><span>Q7</span>情シス・法務に事前相談できる体制はありますか？</h3>
+              <p>クラウド利用・外部API通信の可否など、セキュリティ要件を事前に確認できると、契約後に止まりません。</p>
+              <div class="assessment-choices">
+                <label><input type="radio" name="q7" value="yes">はい</label>
+                <label><input type="radio" name="q7" value="no">いいえ</label>
+              </div>
+            </article>
+          </form>
+
+          <aside class="assessment-result" aria-live="polite">
+            <div class="recommendation">
+              <span>おすすめ度</span>
+              <strong data-recommendation-label>診断中</strong>
+              <em data-recommendation-stars>---</em>
+            </div>
+            <h3 data-recommendation-title>7項目に回答してください</h3>
+            <p data-recommendation-text>すべて回答すると、研修開始に向けたおすすめ度を表示します。</p>
+            <div class="answer-status">
+              <span>回答状況</span>
+              <strong><b data-answered-count>0</b> / 7</strong>
+            </div>
+            <div class="assessment-score">
+              <span>該当項目 <strong><b data-score-count>0</b> / 7</strong></span>
+              <div class="assessment-progress" aria-hidden="true"><i data-progress-bar></i></div>
+            </div>
+            <div class="assessment-actions">
+              <a class="button primary" href="index.html#contact">資料請求をする →</a>
+              <button class="button ghost" type="button" data-reset-assessment>再診断</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-company">
+          <a class="footer-brand" href="index.html" aria-label="CODEX研修 ホーム">
+            <span class="footer-brand-mark" aria-hidden="true"></span>
+            <span><strong>CODEX</strong> 研修</span>
+          </a>
+          <p class="footer-lead">
+Codex研修で法人リスキリング・人材育成開発を支援。未経験向けCodex塾から社内講師育成まで一気通貫。
+ </p>
+          <address>
+            <a href="mailto:contact@zettai.co.jp">contact@zettai.co.jp</a>
+            <span>東京都港区麻布十番</span>
+          </address>
+        </div>
+
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <section>
+            <h2>サイト構成</h2>
+            <a href="index.html">ホーム</a>
+            <a href="assessment.html">適正診断</a>
+            <a href="courses.html">コース一覧</a>
+            <a href="pricing.html">料金プラン</a>
+          </section>
+          <section>
+            <h2>研修情報</h2>
+            <a href="comparison.html">他ツールとの違い</a>
+            <a href="usecases.html">導入事例</a>
+            <a href="news.html">最新ニュース</a>
+          </section>
+          <section>
+            <h2>サポート</h2>
+            <a href="index.html#contact">お問い合わせ</a>
+            <a href="pricing.html">よくある料金相談</a>
+            <a href="courses.html">研修プログラム</a>
+          </section>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <nav aria-label="法務リンク">
+          <a href="index.html#contact">運営会社</a>
+          <a href="index.html#contact">利用規約</a>
+          <a href="index.html#contact">プライバシーポリシー</a>
+          <a href="index.html#contact">特定商取引法に基づく表記</a>
+          <a class="footer-admin-link" href="admin.html">管理者ログイン</a>
+        </nav>
+        <p>© 2026 株式会社ZETTAi All Rights Reserved.</p>
+      </div>
+
+      <a class="footer-chat" href="index.html#contact" aria-label="お問い合わせ">
+        <span aria-hidden="true"></span>
+      </a>
+    </footer>
+    <script>
+      (() => {
+        const root = document.querySelector("[data-assessment]");
+
+        if (!root) {
+          return;
+        }
+
+        const form = root.querySelector("#assessment-form");
+        const questions = [...form.querySelectorAll(".assessment-question")];
+        const result = root.querySelector(".assessment-result");
+        const answeredCount = root.querySelector("[data-answered-count]");
+        const scoreCount = root.querySelector("[data-score-count]");
+        const progressBar = root.querySelector("[data-progress-bar]");
+        const label = root.querySelector("[data-recommendation-label]");
+        const stars = root.querySelector("[data-recommendation-stars]");
+        const title = root.querySelector("[data-recommendation-title]");
+        const text = root.querySelector("[data-recommendation-text]");
+        const resetButton = root.querySelector("[data-reset-assessment]");
+        const total = questions.length;
+
+        const recommendations = {
+          high: {
+            label: "高",
+            stars: "★★★",
+            title: "すぐに研修を開始できる状態です",
+            text: "導入準備はほぼ整っています。無料相談で具体的な進め方とスケジュールをご提案します。",
+          },
+          middle: {
+            label: "中",
+            stars: "★★",
+            title: "準備を整えれば開始できます",
+            text: "受講環境や対象部署を少し整理すると、研修効果を出しやすくなります。",
+          },
+          low: {
+            label: "低",
+            stars: "★",
+            title: "まずは導入条件を整理しましょう",
+            text: "PC環境、推進担当、対象業務を決めるところから始めると、研修後の定着につながります。",
+          },
+        };
+
+        const update = () => {
+          const checked = [...form.querySelectorAll("input[type='radio']:checked")];
+          const yesCount = checked.filter((input) => input.value === "yes").length;
+          const answered = checked.length;
+          const completion = total ? Math.round((yesCount / total) * 100) : 0;
+
+          answeredCount.textContent = answered;
+          scoreCount.textContent = yesCount;
+          progressBar.style.width = `${completion}%`;
+          result.classList.remove("is-high", "is-middle", "is-low", "is-waiting");
+
+          if (answered < total) {
+            label.textContent = "診断中";
+            stars.textContent = "---";
+            title.textContent = `あと${total - answered}問回答してください`;
+            text.textContent = "すべて回答すると、研修開始に向けたおすすめ度を表示します。";
+            result.classList.add("is-waiting");
+            return;
+          }
+
+          const level = yesCount >= 6 ? "high" : yesCount >= 4 ? "middle" : "low";
+          const recommendation = recommendations[level];
+
+          label.textContent = recommendation.label;
+          stars.textContent = recommendation.stars;
+          title.textContent = recommendation.title;
+          text.textContent = recommendation.text;
+          result.classList.add(`is-${level}`);
+        };
+
+        form.addEventListener("change", update);
+        resetButton.addEventListener("click", () => {
+          form.reset();
+          update();
+          questions[0].scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+        update();
+      })();
+    </script>
+    <script src="site-metrics.js?v=admin-font-noto-20260625a"></script>
+  </body>
+</html>

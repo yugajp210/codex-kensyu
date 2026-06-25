@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>他ツールとの違い | Codex研修</title>
+    <meta name="description" content="Codexとチャット型AI、エディタ補完の違いを整理するページです。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=admin-font-noto-20260625a">
+  </head>
+  <body>
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-hidden="true">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Codex研修 ホーム">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M24 4 42 14.5v7.3l-6.6 3.8v-7.2L24 11.8 12.6 18.4v13.2L24 38.2l11.4-6.6v-7.2l6.6 3.8v7.3L24 46 6 35.5v-23L24 4Z"></path>
+            <path d="M24 11.8 12.6 18.4v13.2L24 38.2v7.8L6 35.5v-23L24 4v7.8Z"></path>
+          </svg>
+        </span>
+        <span><strong>CODEX</strong> 研修</span>
+      </a>
+      <label class="header-menu" for="menu-toggle" aria-label="メニューを開く"><span></span><span></span><span></span></label>
+    </header>
+    <label class="menu-scrim" for="menu-toggle" aria-label="メニューを閉じる"></label>
+    <aside class="side-menu" aria-label="メニュー">
+      <div class="menu-head"><p>MENU</p><label class="menu-close" for="menu-toggle" aria-label="メニューを閉じる"></label></div>
+      <nav class="menu-list">
+        <a href="index.html">
+          <svg class="menu-icon clean-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 4l8 7.5"></path><path d="M6.5 10.5v9h11v-9"></path><path d="M10 19.5v-5h4v5"></path></svg>
+          <span><strong>ホーム</strong><small>研修全体の概要</small></span>
+        </a>
+        <a href="assessment.html">
+          <svg class="menu-icon icon-target" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="target-blue" x1="9" y1="5" x2="39" y2="43" gradientUnits="userSpaceOnUse"><stop stop-color="#8bbdff"></stop><stop offset="1" stop-color="#1f6fff"></stop></linearGradient></defs><path d="M35.5 11.5A18 18 0 1 0 38 28.5"></path><path d="M29.5 16.5A10.5 10.5 0 1 0 31.8 25.8"></path><path d="M23.2 22.6a3.2 3.2 0 0 0 2 5.8"></path><path d="M39.5 8.5 25 23M39.5 8.5l-1.2 10.5M39.5 8.5 29 9.7"></path><circle cx="35" cy="35" r="9"></circle><path d="m31.8 34.8 2.4 2.4 4.2-5"></path></svg>
+          <span><strong>適正診断</strong><small>30秒で受講相性チェック</small></span>
+        </a>
+        <a href="courses.html">
+          <svg class="menu-icon icon-list" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="10" width="6.5" height="6.5" rx="1.4"></rect><rect x="8" y="21" width="6.5" height="6.5" rx="1.4"></rect><rect x="8" y="32" width="6.5" height="6.5" rx="1.4"></rect><path d="M21 13.2h19M21 24.2h19M21 35.2h19"></path></svg>
+          <span><strong>コース一覧</strong><small>2日/4日/エンタープライズ</small></span>
+        </a>
+        <a href="pricing.html">
+          <svg class="menu-icon icon-price-doc clean-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 18h8M8 18v20h8M8 25h5.5M8 31h5.5"></path><path d="M32 18h8M40 18v20h-8M34.5 25H40M34.5 31H40"></path><rect x="16" y="7" width="16" height="34" rx="3"></rect><path d="m24 12 2.1 4.1 4.5.7-3.3 3.2.8 4.5-4.1-2.1-4.1 2.1.8-4.5-3.3-3.2 4.5-.7L24 12Z"></path><path d="M19.6 27.5 24 32.5l4.4-5M20.5 32.4h7M20.5 36.1h7M24 32.5v6.2"></path></svg>
+          <span><strong>料金プラン</strong><small>明朗な3プラン</small></span>
+        </a>
+        <a href="usecases.html">
+          <svg class="menu-icon icon-building-check clean-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 42h24"></path><path d="M12 42V10.5C12 8.6 13.6 7 15.5 7h15c1.9 0 3.5 1.6 3.5 3.5V30"></path><path d="M34 17h6c1.7 0 3 1.3 3 3v10"></path><rect class="icon-fill" x="18" y="15" width="4" height="4" rx=".7"></rect><rect class="icon-fill" x="26" y="15" width="4" height="4" rx=".7"></rect><rect class="icon-fill" x="18" y="25" width="4" height="4" rx=".7"></rect><rect class="icon-fill" x="26" y="25" width="4" height="4" rx=".7"></rect><path d="M21 42v-9h8v9"></path><circle cx="36.5" cy="35.5" r="8.2"></circle><path d="m32.9 35.1 2.6 2.7 5.2-6"></path></svg>
+          <span><strong>導入事例</strong><small>法人の活用シーンを紹介</small></span>
+        </a>
+        <a href="features.html">
+          <svg class="menu-icon icon-spark clean-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.3 13.5 9a2 2 0 0 0 1.5 1.5l5.7 1.5-5.7 1.5a2 2 0 0 0-1.5 1.5L12 20.7l-1.5-5.7A2 2 0 0 0 9 13.5L3.3 12 9 10.5A2 2 0 0 0 10.5 9z"></path><path d="M19 3v4M21 5h-4M5 17v3M6.5 18.5h-3"></path></svg>
+          <span><strong>できること</strong><small>Codex活用の実務範囲</small></span>
+        </a>
+        <a class="is-active" href="comparison.html">
+          <svg class="menu-icon icon-branch clean-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h4c4 0 6.5 2.9 6.5 7v5"></path><path d="M20 8h-4c-4 0-6.5 2.9-6.5 7"></path><path d="m7 5-3 3 3 3M17 5l3 3-3 3"></path></svg>
+          <span><strong>他ツールとの違い</strong><small>開発エージェントとしての特徴</small></span>
+        </a>
+        <a href="news.html">
+          <svg class="menu-icon icon-news" viewBox="0 0 48 48" aria-hidden="true"><rect x="8.5" y="10" width="31" height="28" rx="3"></rect><rect class="news-block" x="15.5" y="18" width="8.5" height="13" rx="1"></rect><path d="M29 18h5.5M29 24.5h5.5M29 31h5.5"></path></svg>
+          <span><strong>最新ニュース</strong><small>リリース・更新情報</small></span>
+        </a>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Difference</p>
+        <h1>他ツールとの違い</h1>
+        <p>Codexは会話だけで完結する補助ツールではなく、開発環境の中で作業を進めるエージェントです。</p>
+        <div class="page-actions"><a class="button primary" href="usecases.html">導入事例を見る</a><a class="button ghost" href="assessment.html">適正診断へ</a></div>
+      </section>
+
+      <section class="section">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Positioning</p>
+            <h2>使い分けの考え方</h2>
+            <p>
+研修では「任せる範囲」と「人が見るべき判断」を切り分け、現場で事故なく使う方法を扱います。文章生成や補完ではなく、リポジトリ全体を踏まえた実作業に接続する点が特徴です。
+ </p>
+          </div>
+          <div class="compare-list">
+            <article><strong>チャット型AI</strong><span>質問への回答、方針整理、コード例の作成が中心。</span></article>
+            <article><strong>エディタ補完</strong><span>現在開いているファイルや、周辺コードの補完が中心。</span></article>
+            <article class="highlight"><strong>Codex</strong><span>リポジトリを横断して読み、編集し、検証まで進める実務エージェント。</span></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-company">
+          <a class="footer-brand" href="index.html" aria-label="CODEX研修 ホーム">
+            <span class="footer-brand-mark" aria-hidden="true"></span>
+            <span><strong>CODEX</strong> 研修</span>
+          </a>
+          <p class="footer-lead">
+Codex研修で法人リスキリング・人材育成開発を支援。未経験向けCodex塾から社内講師育成まで一気通貫。
+ </p>
+          <address>
+            <a href="mailto:contact@zettai.co.jp">contact@zettai.co.jp</a>
+            <span>東京都港区麻布十番</span>
+          </address>
+        </div>
+
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <section>
+            <h2>サイト構成</h2>
+            <a href="index.html">ホーム</a>
+            <a href="assessment.html">適正診断</a>
+            <a href="courses.html">コース一覧</a>
+            <a href="pricing.html">料金プラン</a>
+          </section>
+          <section>
+            <h2>研修情報</h2>
+            <a href="comparison.html">他ツールとの違い</a>
+            <a href="usecases.html">導入事例</a>
+            <a href="news.html">最新ニュース</a>
+          </section>
+          <section>
+            <h2>サポート</h2>
+            <a href="index.html#contact">お問い合わせ</a>
+            <a href="pricing.html">よくある料金相談</a>
+            <a href="courses.html">研修プログラム</a>
+          </section>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <nav aria-label="法務リンク">
+          <a href="index.html#contact">運営会社</a>
+          <a href="index.html#contact">利用規約</a>
+          <a href="index.html#contact">プライバシーポリシー</a>
+          <a href="index.html#contact">特定商取引法に基づく表記</a>
+          <a class="footer-admin-link" href="admin.html">管理者ログイン</a>
+        </nav>
+        <p>© 2026 株式会社ZETTAi All Rights Reserved.</p>
+      </div>
+
+      <a class="footer-chat" href="index.html#contact" aria-label="お問い合わせ">
+        <span aria-hidden="true"></span>
+      </a>
+    </footer>
+    <script src="site-metrics.js?v=admin-font-noto-20260625a"></script>
+  </body>
+</html>
